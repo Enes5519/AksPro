@@ -1,66 +1,5 @@
 {
-  "": {
-    "hasCategory": false,
-    "hasBottomText": false,
-    "useRouter": true,
-    "title": "Rescara Profil Serileri",
-    "products": [
-      {
-        "path": "giydirme-cephe-sistemleri.png",
-        "alt": "Giydirme Cephe Sistemleri",
-        "to": "rescara/giydirme-cephe-sistemleri"
-      },
-      {
-        "path": "cam-balkon-sistemleri.png",
-        "alt": "Cam Balkon Sistemleri",
-        "to": "rescara/cam-balkon-sistemleri"
-      },
-      {
-        "path": "gunes-kiricilar.png",
-        "alt": "Güneş Kırıcılar Sistemleri",
-        "to": "rescara/gunes-kiricilar"
-      },
-      {
-        "path": "kapi-ve-pencere-sistemleri.png",
-        "alt": "Kapı ve Pencere Sistemleri",
-        "to": "rescara/kapi-ve-pencere-sistemleri"
-      },
-      {
-        "path": "kompozit-panel-sistemleri.png",
-        "alt": "Kompozit Panel Sistemleri",
-        "to": "rescara/kompozit-panel-sistemleri"
-      },
-      {
-        "path": "korkuluk-sistemleri.png",
-        "alt": "Korkuluk Sistemleri",
-        "to": "rescara/korkuluk-sistemleri"
-      },
-      {
-        "path": "ofis-bolme-sistemleri.png",
-        "alt": "Ofis Bölme Sistemleri",
-        "to": "rescara/ofis-bolme-sistemleri"
-      },
-      {
-        "path": "skylight-isik-sistemleri.png",
-        "alt": "Skylight Işıklık Sistemleri",
-        "to": "rescara/skylight-isiklik-sistemleri"
-      },
-      {
-        "path": "surme-ve-kaldirsur-sistemleri.png",
-        "alt": "Sürme ve Kaldırsür Sistemleri",
-        "to": "rescara/surme-ve-kaldirsur-sistemleri"
-      },
-      {
-        "path": "terra-cotta-sistemleri.png",
-        "alt": "Terra Cotta Sistemleri",
-        "to": "rescara/terra-cotta-sistemleri"
-      }
-    ]
-  },
   "kapi-ve-pencere-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Kapı ve Pencere Sistemleri",
     "products": [
       {
@@ -121,9 +60,6 @@
     ]
   },
   "surme-ve-kaldirsur-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Sürme ve Kaldırsür Sistemleri",
     "products": [
       {
@@ -159,9 +95,6 @@
     ]
   },
   "giydirme-cephe-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Giydirme Cephe Sistemleri",
     "products": [
       {
@@ -187,9 +120,6 @@
     ]
   },
   "ofis-bolme-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Ofis Bölme Sistemleri",
     "products": [
       {
@@ -220,9 +150,6 @@
     ]
   },
   "skylight-isiklik-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Skylight Işıklık Sistemleri",
     "products": [
       {
@@ -238,9 +165,6 @@
     ]
   },
   "kompozit-panel-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Kompozit Panel Sistemleri",
     "products": [
       {
@@ -256,9 +180,6 @@
     ]
   },
   "gunes-kiricilar": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Güneş Kırıcılar",
     "products": [
       {
@@ -274,9 +195,6 @@
     ]
   },
   "korkuluk-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Korkuluk Sistemleri",
     "products": [
       {
@@ -312,9 +230,6 @@
     ]
   },
   "cam-balkon-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Cam Balkon Sistemleri",
     "products": [
       {
@@ -335,9 +250,6 @@
     ]
   },
   "terra-cotta-sistemleri": {
-    "hasCategory": true,
-    "hasBottomText": true,
-    "useRouter": false,
     "title": "Terra Cotta Sistemleri",
     "products": [
       {

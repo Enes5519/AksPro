@@ -9,7 +9,7 @@ const ProductList = ({ title, path, categories, children }) => (
           if (categoryPath !== "") {
             return (
               <Link key={categoryPath} href={`${path}${categoryPath}`}>
-                <a className="whitespace-nowrap rounded-lg py-2.5 text-white px-5 hover:bg-red-600">{name}</a>
+                <a className="whitespace-nowrap rounded-lg py-2.5 text-white px-5 hover:bg-red-600 w-full">{name}</a>
               </Link>
             );
           }

@@ -5,7 +5,7 @@ import ProductList from "@/components/common/ProductList";
 import ZoomedImage from "@/components/common/ZoomedImage";
 import Meta from "@/components/core/Meta";
 
-const AksPro = ({ category, categoryPath, categories }) => {
+const AksProProduct = ({ category, categoryPath, categories }) => {
   const [zoomImage, setZoomImage] = useState(null);
 
   const products = useMemo(() => {
@@ -71,4 +71,4 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export default AksPro;
+export default AksProProduct;

@@ -5,33 +5,29 @@ import ProductList from "@/components/common/ProductList";
 import ZoomedImage from "@/components/common/ZoomedImage";
 import Meta from "@/components/core/Meta";
 
-const Almin = ({ category, categoryPath, categories }) => {
+const AlminProduct = ({ category, categoryPath, categories }) => {
   const [zoomImage, setZoomImage] = useState(null);
 
   const products = useMemo(() => {
-    if (category.productCount) {
-      const p = [];
-      for (let i = 1; i <= category.productCount; i += 1) {
-        p.push(
-          <img
-            src={`/images/profil-sistemleri/almin/${categoryPath}/${i}.jpg`}
-            alt={category.imageAlt}
-            className="hover:opacity-70 cursor-zoom-in"
-            role="presentation"
-            onClick={({ target }) => setZoomImage({ src: target.src, alt: target.alt })}
-          />
-        );
-      }
-
-      return p;
+    const p = [];
+    for (let i = 1; i <= category.productCount; i += 1) {
+      p.push(
+        <img
+          src={`/images/profil-sistemleri/almin/${categoryPath}/${i}.jpg`}
+          alt={category.imageAlt}
+          className="hover:opacity-70 cursor-zoom-in"
+          role="presentation"
+          onClick={({ target }) => setZoomImage({ src: target.src, alt: target.alt })}
+        />
+      );
     }
 
-    return null;
+    return p;
   }, [category.imageAlt, category.productCount, categoryPath]);
 
   return (
     <Layout>
-      <Meta title={`${categoryPath === "" ? "Almin Profil Serileri" : category.title} - Aks & Pro`} />
+      <Meta title={`${category.title} - Aks & Pro`} />
       <ProductList title={category.title} categories={categories} path="/profil-serileri/almin/">
         {products}
       </ProductList>
@@ -56,4 +52,4 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export default Almin;
+export default AlminProduct;
