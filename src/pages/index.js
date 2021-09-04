@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative overflow-hidden w-full h-full">
         {sliderImages.map((sliderImage, index) => (
           <section
-            className="absolute z-10 w-full h-full transition-all"
+            className="absolute w-full h-full transition-all"
             key={sliderImage}
             style={{ left: calculateLeft(index) }}
             onMouseOver={removeInterval}
@@ -31,14 +31,14 @@ export default function Home() {
           </section>
         ))}
         <button
-          className="drop-shadow absolute z-20 top-1/2 text-xl text-white opacity-50 transition-opacity cursor-pointer select-none hover:opacity-100 -translate-y-1/2 left-5"
+          className="drop-shadow absolute top-1/2 text-xl text-white opacity-50 transition-opacity cursor-pointer select-none hover:opacity-100 -translate-y-1/2 left-5"
           onClick={navigateBack}
           type="button"
         >
           <IconChevronLeft className="w-16 h-16" />
         </button>
         <button
-          className="drop-shadow absolute z-20 top-1/2 text-xl text-white opacity-50 transition-opacity cursor-pointer select-none hover:opacity-100 -translate-y-1/2 right-5"
+          className="drop-shadow absolute top-1/2 text-xl text-white opacity-50 transition-opacity cursor-pointer select-none hover:opacity-100 -translate-y-1/2 right-5"
           onClick={navigateNext}
           type="button"
         >
