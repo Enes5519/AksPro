@@ -1,12 +1,11 @@
-import Header from './Header';
-import Footer from './Footer';
+import clsx from "clsx";
+import Header from "./Header";
+import Footer from "./Footer";
 
-const Layout = ({ children }) => (
-  <div className="flex flex-col min-w-0 min-h-screen">
+const Layout = ({ children, className }) => (
+  <div className="flex flex-col min-h-screen">
     <Header />
-    <div className="flex-grow">
-      {children}
-    </div>
+    <div className={clsx("flex-grow", className)}>{children}</div>
     <Footer />
   </div>
 );
