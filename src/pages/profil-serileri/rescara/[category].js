@@ -2,9 +2,11 @@ import rescaraProducts from "@/products/profil-serileri/rescara.json";
 import ProductList from "@/components/common/ProductList";
 import WithLink from "@/components/common/WithLink";
 import Layout from "@/components/core/Layout";
+import Meta from "@/components/core/Meta";
 
 const Rescara = ({ category, categories, categoryPath }) => (
   <Layout>
+    <Meta title={`${category.title} - Aks & Pro`} />
     <ProductList title={category.title} categories={categories} path="/profil-serileri/rescara/">
       {category.products.map((product) => (
         <WithLink key={product.to} href={product.to} useRouter={category.useRouter}>

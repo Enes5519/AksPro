@@ -4,6 +4,7 @@ import IconChevronLeft from "@/icons/chevron_left.svg";
 import useCalculateLeft from "@/hooks/home/useCalculateLeft";
 import useInnerWidth from "@/hooks/home/useInnerWidth";
 import useSlider from "@/hooks/home/useSlider";
+import Meta from "@/components/core/Meta";
 
 const sliderImages = ["/slider/1.jpg", "/slider/2.jpeg", "/slider/3.png"];
 
@@ -16,6 +17,7 @@ export default function Home() {
 
   return (
     <Layout className="grid">
+      <Meta />
       <div className="relative overflow-hidden w-full h-full">
         {sliderImages.map((sliderImage, index) => (
           <section

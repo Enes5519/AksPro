@@ -3,6 +3,7 @@ import alminProducts from "@/products/profil-serileri/almin.json";
 import Layout from "@/components/core/Layout";
 import ProductList from "@/components/common/ProductList";
 import ZoomedImage from "@/components/common/ZoomedImage";
+import Meta from "@/components/core/Meta";
 
 const Almin = ({ category, categoryPath, categories }) => {
   const [zoomImage, setZoomImage] = useState(null);
@@ -30,6 +31,7 @@ const Almin = ({ category, categoryPath, categories }) => {
 
   return (
     <Layout>
+      <Meta title={`${categoryPath === "" ? "Almin Profil Serileri" : category.title} - Aks & Pro`} />
       <ProductList title={category.title} categories={categories} path="/profil-serileri/almin/">
         {products}
       </ProductList>

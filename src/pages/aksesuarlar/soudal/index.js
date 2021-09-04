@@ -2,9 +2,11 @@ import Link from "next/link";
 import soudal from "@/products/aksesuarlar/soudal.json";
 import Layout from "@/components/core/Layout";
 import ProductList from "@/components/common/ProductList";
+import Meta from "@/components/core/Meta";
 
 const Soudal = () => (
   <Layout>
+    <Meta title="Soudal Silikonlar - Aks & Pro" />
     <ProductList title={soudal.title}>
       {soudal.products.map((product) => (
         <Link key={product.to} href={`/aksesuarlar/soudal/${product.to}`}>

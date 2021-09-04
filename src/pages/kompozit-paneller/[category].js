@@ -1,9 +1,11 @@
 import kompozitPaneller from "@/products/kompozit-panel.json";
 import Layout from "@/components/core/Layout";
 import ProductList from "@/components/common/ProductList";
+import Meta from "@/components/core/Meta";
 
 const KompozitPaneller = ({ category }) => (
   <Layout>
+    <Meta title={`${category.title} - Aks & Pro`} />
     <ProductList title={category.title}>
       {category.products.map((product) => (
         <a key={product.path} href={`/pdf/kompozit-paneller/${product.to}`} target="_blank" rel="noreferrer">

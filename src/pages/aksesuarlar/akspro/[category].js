@@ -3,6 +3,7 @@ import akspro from "@/products/aksesuarlar/akspro.json";
 import Layout from "@/components/core/Layout";
 import ProductList from "@/components/common/ProductList";
 import ZoomedImage from "@/components/common/ZoomedImage";
+import Meta from "@/components/core/Meta";
 
 const AksPro = ({ category, categoryPath, categories }) => {
   const [zoomImage, setZoomImage] = useState(null);
@@ -45,6 +46,7 @@ const AksPro = ({ category, categoryPath, categories }) => {
 
   return (
     <Layout>
+      <Meta title="Aksesuarlar - Aks & Pro" />
       <ProductList categories={categories} path="/aksesuarlar/akspro/" title={category.title}>
         {products}
       </ProductList>

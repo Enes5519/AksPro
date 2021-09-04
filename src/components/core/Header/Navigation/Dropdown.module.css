@@ -1,5 +1,7 @@
-.dropdown:focus-within .dropdownMenu {
-    opacity:1;
-    transform: translate(0) scale(1);
-    visibility: visible;
+@screen lg{
+    .dropdown:focus-within .dropdownMenu {
+        opacity:1;
+        transform: translate(0) scale(1);
+        visibility: visible;
+    }
 }

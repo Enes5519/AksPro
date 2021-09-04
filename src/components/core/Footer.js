@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Footer = () => (
   <footer className="bg-gray-900 py-8">
-    <div className="container text-white flex justify-between items-start text-right">
+    <div className="container text-white flex gap-8 lg:gap-0 flex-col lg:flex-row lg:justify-between items-center lg:items-start text-center lg:text-right">
       <span>Aks &amp; Pro - &copy; 2021</span>
       <div>
         <div className="flex items-center gap-4">

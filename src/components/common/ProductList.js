@@ -2,16 +2,14 @@ import React from "react";
 import Link from "next/link";
 
 const ProductList = ({ title, path, categories, children }) => (
-  <div className="flex gap-8 items-start container py-8">
+  <div className="flex flex-col lg:flex-row gap-8 items-start container py-8">
     {categories && categories.length > 0 && (
-      <aside className="bg-red-500 flex flex-col">
+      <aside className="bg-red-500 flex flex-col items-center lg:items-start rounded-lg w-full lg:w-auto order-1 lg:order-none">
         {categories.map(([categoryPath, name]) => {
           if (categoryPath !== "") {
             return (
               <Link key={categoryPath} href={`${path}${categoryPath}`}>
-                <a className="whitespace-nowrap py-2.5 text-white px-5 border-b border-red-600 hover:bg-red-600">
-                  {name}
-                </a>
+                <a className="whitespace-nowrap rounded-lg py-2.5 text-white px-5 hover:bg-red-600">{name}</a>
               </Link>
             );
           }
