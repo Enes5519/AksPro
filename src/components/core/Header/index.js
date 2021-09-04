@@ -26,7 +26,7 @@ const Header = () => (
             <span className="hidden lg:block">info@akspro.com.tr</span>
           </a>
           <a className="flex items-center space-x-2" href="tel:+903622385858">
-            <Image src="/icons/mail.svg" alt="Phone Icon" width={24} height={24} />
+            <Image src="/icons/phone.svg" alt="Phone Icon" width={24} height={24} />
             <span className="hidden lg:block">+90 362 238 5858</span>
           </a>
         </div>
