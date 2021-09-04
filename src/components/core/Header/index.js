@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import Navigation from '@/components/core/Header/Navigation';
+import Link from "next/link";
+import Image from "next/image";
+import Navigation from "@/components/core/Header/Navigation";
 
 const Header = () => (
-  <header>
+  <header className="border-b border-gray-100">
     <section className="bg-red-500 text-white">
       <div className="h-12 container items-center flex justify-center lg:justify-between">
         <div className="flex items-center space-x-4">
@@ -32,7 +32,7 @@ const Header = () => (
         </div>
       </div>
     </section>
-    <section className="container h-24 flex items-center justify-between border-b-1 border-grey-500">
+    <section className="container h-24 flex items-center justify-between">
       <Link href="/">
         <a className="relative w-[190.44px] h-14 lg:w-[217.65px] lg:h-16">
           <Image src="/logo-text.png" alt="Aks &amp; Pro Logo" layout="fill" />
