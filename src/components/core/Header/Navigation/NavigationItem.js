@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Dropdown from './Dropdown';
+import Link from "next/link";
+import Dropdown from "./Dropdown";
 
 const NavigationItem = ({ navigationItem }) => (
   <Dropdown id={navigationItem.id} title={navigationItem.name}>
@@ -8,21 +8,18 @@ const NavigationItem = ({ navigationItem }) => (
         <Link href={subPage.path}>
           <a
             className="self-center"
-            target={subPage.newTab ? '_blank' : undefined}
-            rel={subPage.newTab ? 'noreferrer' : undefined}
+            target={subPage.newTab ? "_blank" : undefined}
+            rel={subPage.newTab ? "noreferrer" : undefined}
           >
             <img src={subPage.image.path} alt={subPage.image.alt} className="h-10 max-w-none" />
           </a>
         </Link>
         {subPage.links.map((link) => (
-          <Link
-            key={link.to}
-            href={subPage.path + link.to}
-          >
+          <Link key={link.to} href={`${subPage.path}/${link.to}`}>
             <a
               className="whitespace-nowrap hover:text-red-500"
-              target={subPage.newTab ? '_blank' : undefined}
-              rel={subPage.newTab ? 'noreferrer' : undefined}
+              target={subPage.newTab ? "_blank" : undefined}
+              rel={subPage.newTab ? "noreferrer" : undefined}
             >
               {link.name}
             </a>
